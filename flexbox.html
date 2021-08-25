@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox tutorial</title>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <style>
+    /* select flex container 
+    flex direction
+    row (default ) row revers column column revers */
+    .container {
+      display: inline-flex;
+    }
+
+    .container2 {
+      align-items: flex-end;
+      display: flex;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      flex-direction: column-reverse;
+    }
+    /* flex wrap */
+    .container3 {
+      height: 10vh;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container4 {
+      border: 1px solid green;
+      display: flex;
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: space-between; */
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-between;
+      /* justify-content: space-evenly; */
+    }
+  </style>
+  <body>
+    <!-- parent = flex container -->
+    <div class="container">
+      <!-- children = flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+
+    <div class="gap"></div>
+
+    <!-- parent = flex container -->
+    <div class="container2">
+      <!-- children = flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+    <div class="gap"></div>
+    <!-- parent = flex container -->
+    <div class="container3">
+      <!-- children = flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <!-- parent = flex container -->
+    <div class="container4">
+      <!-- children = flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+  </body>
+</html>

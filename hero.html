@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>banner example</title>
+    <link rel="stylesheet" href="hero.css" />
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .hero {
+        min-height: 100vh;
+        background: url("hero.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        color: #cc2936;
+      }
+
+      .banner {
+        min-height: 100vh;
+        background: #08415c;
+      }
+
+      .container2 {
+        border: 2px solid orange;
+        height: 300px;
+        height: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-content: flex-end;
+        align-content: center;
+        justify-content: space-around;
+        justify-content: space-between;
+      }
+
+      /* main axis cross axis */
+      .container {
+        height: 800px;
+        border: 5px solid blue;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-1 {
+        order: 3;
+      }
+
+      .box-2 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>our page title</h1>
+    </header>
+    <div class="banner"></div>
+    <a href="index.html">back home</a>
+
+    <div class="gap"></div>
+
+    <!-- parent = flex container -->
+    <div class="container2">
+      <!-- children = flex items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+    </div>
+
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+  </body>
+</html>
